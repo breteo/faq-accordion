@@ -124,10 +124,9 @@ body {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to bottom, var(--Soft-violet), var(--Soft-blue));
-  box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
-  box-shadow: 0px 32px 27px -8px rgba(59,59,135,0.81);
   background-repeat: no-repeat;
   background-size: contain;
+  margin: 0 auto;
 }
 
 .card {
@@ -136,68 +135,47 @@ body {
   height: 509px;
   justify-content: center;
   align-items: center;
-  background-color: white;
   border-radius: 15px;
   box-shadow: 0px 32px 27px -8px rgba(59,59,135,0.81);
+  background: url(images/bg-pattern-desktop.svg), white;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: -530px -265px;
 }
 
 .hero-img-mobile {
   display: none;
 }
 
-
+.img-section {
+  width: 50%;
+}
 
 .img-section-center {
-  overflow-x: hidden;
+  overflow: hidden;
+  width: 500px;
+  height: 100%;
 }
 
 .container-img {
   display: block;
-  margin-top: 4.7rem;
-  margin-left: -4.5rem;
+  margin-left: -13.5%;
 }
 
 .container-img-2 {
   display: block;
   margin-left: -20.5%;
-  margin-top: -48%;
+  margin-top: -46%;
 }
 
-
 .card-illustration {
-  width: 50%;
   align-items: center;
 }
 
-.card-picture-box {
-    position: absolute;
-    left: -10px;
-    top: 180px;
-}
-
-.card-picture-woman {
-  width: 100%;
-  height: 100%;
-  background-image: url(./images/illustration-woman-online-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: -60px 70px;
-  position: absolute;
-  z-index: 1;
-  padding-right: 5rem;
-}
-
-.card-picture-woman img {
-  position: absolute;
-
-}
-
-.card-picture-shadow img {
-  
-}
-
 .card-faq {
-  width: 350px;
-  margin-left: 1rem;
+  width: 50%;
+  margin-right: 6rem;
+  padding-left: 2rem;
 }
 
 .card-faq h1 {
@@ -205,17 +183,11 @@ body {
   font-size: 2rem;
 }
 
-.card-question-list {
-
-}
-
-
 .card-question {
+  border: none;
+  outline: none;
   color: #4B4C5F;
   cursor: pointer;
-  border: none;
-  text-align: left;
-  outline: none;
   font-size: 15px;
   transition: 0.2s;
   display: flex;
@@ -271,4 +243,15 @@ body {
 
 .active {
   font-weight: 600;
+}
+
+@media screen and (max-width: 980px) {
+  .card {
+    width: 327px;
+    height: 535px;
+    background: url(images/bg-pattern-mobile.svg), white;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 39.5px -6px;
+  }
 }
