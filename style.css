@@ -244,7 +244,7 @@ body {
 @media screen and (max-width: 980px) {
   .card {
     width: 327px;
-    height: 475px;
+    height: 500px;
     background: url(images/bg-pattern-mobile.svg), white;
     background-repeat: no-repeat;
     background-size: 75%;
@@ -270,10 +270,9 @@ body {
   }
 
   .card-faq h1 {
-    display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
   
 
