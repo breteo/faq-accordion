@@ -184,16 +184,12 @@ body {
 }
 
 .card-question {
-  border: none;
-  outline: none;
   color: #4B4C5F;
   cursor: pointer;
   font-size: 15px;
   transition: 0.2s;
   display: flex;
-  flex-direction: row;
   justify-content:space-between;
-  align-items: center;
   padding: 1rem 0;
 }
 
@@ -248,10 +244,37 @@ body {
 @media screen and (max-width: 980px) {
   .card {
     width: 327px;
-    height: 535px;
+    height: 475px;
     background: url(images/bg-pattern-mobile.svg), white;
     background-repeat: no-repeat;
     background-size: 75%;
     background-position: 39.5px -6px;
   }
+
+  .hero-img-mobile {
+    display: block;
+    position: absolute;
+    width: 240px;
+    margin-top: -32rem;
+    margin-left: -.5rem;
+  }
+  
+  .img-section {
+    display: none;
+  }
+
+  .card-faq {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+  }
+
+  .card-faq h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+
 }
